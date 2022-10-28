@@ -20,6 +20,16 @@ Cloud Volumes ONTAP 9.8 には、いくつかの新機能と拡張機能が含�
 
 
 
+== C4、M4、およびR4のインスタンスはサポートされなくなりました（2022年10月28日）
+
+AWSでは、C4、M4、およびR4 EC2インスタンスタイプはCloud Volumes ONTAP でサポートされなくなりました。C4、M4、またはR4インスタンスタイプで実行されている既存のシステムがある場合は、C5、m5、またはr5インスタンスファミリーでインスタンスタイプに変更する必要があります。
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["Cloud Volumes ONTAP のEC2インスタンスタイプを変更する方法について説明します"^]。
+
+を参照してください link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["ネットアップサポート"^] これらのインスタンスタイプの可用性とサポート終了の詳細については、を参照してください。
+
+
+
 == 9.8 GA （ 2021 年 1 月 5 日）
 
 Cloud Volumes ONTAP 9.8 の一般リリース（ GA ）がリリースされました。GA リリースにはバグの修正が含まれています。Cloud Manager により、既存の 9.8 RC1 および 9.7 システムをこのリリースにアップグレードするように求められます。
@@ -65,11 +75,11 @@ Cloud Volumes ONTAP 9.8 RC1 が AWS 、 Azure 、 Google Cloud Platform で利�
 
 で導入された機能に加えて https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 9.8"^]このリリースの Cloud Volumes ONTAP には、次の機能が含まれています。
 
-* <<High-availability pairs in Google Cloud>>
-* <<Fixes for Azure NIC detach events and maintenance events>>
-* <<High write speed with HA pairs in AWS and Azure>>
-* <<Support for up to 24 storage VMs in AWS>>
-* <<Core disk for single node systems in AWS>>
+*  pairs in Google Cloud
+*  for Azure NIC detach events and maintenance events
+*  write speed with HA pairs in AWS and Azure
+*  for up to 24 storage VMs in AWS
+*  disk for single node systems in AWS
 
 
 
@@ -114,7 +124,7 @@ C5 、 M5 、 R5 のいずれかのインスタンスタイプを使用して独
 
 link:reference-limits-aws.html["Storage VM の制限に関する詳細情報"]。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["Cloud Volume 用のデータ提供用 Storage VM を作成する方法について説明します AWS の ONTAP"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["Cloud Volume 用のデータ提供用 Storage VM を作成する方法について説明します AWS の ONTAP"^]。
 
 
 
@@ -145,11 +155,3 @@ http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ont
 * シングルノードシステムのアップグレードでは、 I/O が中断されるまで最大 25 分間システムがオフラインになります。
 * HA ペアのアップグレードは無停止で、 I/O が中断されません。無停止アップグレードでは、各ノードが連携してアップグレードされ、クライアントへの I/O の提供が継続されます。
 
-
-
-
-=== C4 、 M4 、および R4 インスタンスタイプ
-
-9.8 リリース以降では、新しい Cloud Volumes ONTAP システムで C4 、 M4 、および R4 インスタンスタイプはサポートされません。C4 、 M4 、または R4 インスタンスタイプで実行されている既存の Cloud Volumes ONTAP システムがある場合も、このリリースにアップグレードできます。
-
-C5 、 m5 、または r5 インスタンスファミリーのインスタンスタイプに変更することをお勧めします。
