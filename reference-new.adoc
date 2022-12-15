@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.8 には、いくつかの新機能と拡張機�
 [role="lead"]
 Cloud Volumes ONTAP 9.8 には、いくつかの新機能と拡張機能が含まれてい
 
-その他の機能と機能拡張は、 Cloud Manager の最新バージョンで導入されました。を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager リリースノート"^] を参照してください。
+その他の機能と拡張機能も、最新バージョンのBlueXPで導入されました。を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["BlueXPリリースノート"^] を参照してください。
 
 
 
@@ -32,15 +32,15 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change
 
 == 9.8 GA （ 2021 年 1 月 5 日）
 
-Cloud Volumes ONTAP 9.8 の一般リリース（ GA ）がリリースされました。GA リリースにはバグの修正が含まれています。Cloud Manager により、既存の 9.8 RC1 および 9.7 システムをこのリリースにアップグレードするように求められます。
+Cloud Volumes ONTAP 9.8 の一般リリース（ GA ）がリリースされました。GA リリースにはバグの修正が含まれています。BlueXPでは、既存の9.8 RC1および9.7システムをこのリリースにアップグレードするように求められます。
 
 
 
-== Cloud Manager 3.9.2 （ 2021 年 1 月 4 日）で導入された変更点
+== Connector 3.9.2（2021年1月4日）での変更点
 
-Cloud Manager 3.9.2 リリースでは、 Cloud Volumes ONTAP の機能がいくつか拡張されています。 AWS アウトポストのサポート、 Google Cloud の大容量ディスクのサポートなどが追加されています。
+BlueXP Connectorの3.9.2リリースには、Cloud Volumes ONTAP の機能強化がいくつか含まれています。これには、AWSのアウトポスト、Google Cloudの大容量ディスクなどが含まれます。
 
-にアクセスします https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager リリースノート"^] 3.9.2 リリースの詳細については、を参照してください。
+にアクセスします https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["BlueXPリリースノート"^] 3.9.2 リリースの詳細については、を参照してください。
 
 
 
@@ -60,7 +60,7 @@ C4 、 M4 、または R4 インスタンスタイプで実行されている既
 
 == 9.8 RC1 更新プログラム（ 2020 年 11 月 12 日）
 
-シングルノードシステムと同様に、 Cloud Manager では、 C5 、 M5 、または R5 インスタンスタイプを使用すると、 AWS で 9.8 の新しい HA ペア環境にコアディスクが割り当てられます。コアディスクを使用すると、サポートされるインスタンスタイプを切り替えることができ、問題が発生した場合にコアファイルを収集するシステムの機能が拡張され、将来的にはより大規模なインスタンスタイプをサポートできるようになります。
+シングルノードシステムと同様に、C5、M5、またはR5のインスタンスタイプを使用すると、BlueXPはAWSで9.8のHAペア構成の新規導入にコアディスクを割り当てます。コアディスクを使用すると、サポートされるインスタンスタイプを切り替えることができ、問題が発生した場合にコアファイルを収集するシステムの機能が拡張され、将来的にはより大規模なインスタンスタイプをサポートできるようになります。
 
 コアディスクは、 540 GiB の汎用 SSD （ gp2 ）です。
 
@@ -130,7 +130,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-sv
 
 === AWS のシングルノードシステム用のコアディスクです
 
-C5 、 M5 、または R5 のインスタンスタイプを使用すると、 Cloud Manager で AWS で 9.8 のシングルノード環境にコアディスクが割り当てられるようになりました。コアディスクを使用すると、サポートされるインスタンスタイプを切り替えることができ、問題が発生した場合にコアファイルを収集するシステムの機能が拡張され、将来的にはより大規模なインスタンスタイプをサポートできるようになります。
+Blue XPでは、C5、M5、またはR5のインスタンスタイプを使用すると、AWSで9.8個のシングルノード環境にコアディスクが割り当てられるようになりました。コアディスクを使用すると、サポートされるインスタンスタイプを切り替えることができ、問題が発生した場合にコアファイルを収集するシステムの機能が拡張され、将来的にはより大規模なインスタンスタイプをサポートできるようになります。
 
 コアディスクは、 540 GiB の汎用 SSD （ gp2 ）です。
 
@@ -139,18 +139,18 @@ NOTE: このコアディスクの追加により、これらのインスタン�
 
 
 
-== 必要な Cloud Manager Connector のバージョン
+== 必要なBlueXPコネクタのバージョン
 
-新しい Cloud Volumes ONTAP 9.8 システムを導入し、既存のシステムをバージョン 9.8 にアップグレードするには、 Cloud Manager Connector でバージョン 3.9.0 以降が実行されている必要があります。
+Cloud Volumes ONTAP 9.8システムを新規に導入し、既存のシステムをバージョン9.8にアップグレードするには、BlueXPコネクタがバージョン3.9.0以降を実行している必要があります。
 
 
 
 == アップグレードに関する注意事項
 
-* Cloud Volumes ONTAP のアップグレードが Cloud Manager から完了している必要があります。System Manager または CLI を使用して Cloud Volumes ONTAP をアップグレードしないでください。これを行うと、システムの安定性に影響を与える可能性
-* Cloud Volumes ONTAP 9.8 に 9.7 リリースからアップグレードできます。Cloud Manager により、既存の Cloud Volumes ONTAP 9.7 システムを 9.8 リリースにアップグレードするように求められます。
+* Cloud Volumes ONTAP のアップグレードは、BlueXPから完了している必要があります。System Manager または CLI を使用して Cloud Volumes ONTAP をアップグレードしないでください。これを行うと、システムの安定性に影響を与える可能性
+* Cloud Volumes ONTAP 9.8 に 9.7 リリースからアップグレードできます。BlueXPでは、既存のCloud Volumes ONTAP 9.7システムを9.8リリースにアップグレードするよう求められます。
 +
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Cloud Manager から通知された場合のアップグレード方法について説明します"^]。
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["BlueXPから通知があった場合のアップグレード方法について説明します"^]。
 
 * シングルノードシステムのアップグレードでは、 I/O が中断されるまで最大 25 分間システムがオフラインになります。
 * HA ペアのアップグレードは無停止で、 I/O が中断されません。無停止アップグレードでは、各ノードが連携してアップグレードされ、クライアントへの I/O の提供が継続されます。
