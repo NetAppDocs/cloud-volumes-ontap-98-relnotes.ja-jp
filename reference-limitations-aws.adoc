@@ -54,10 +54,10 @@ Cloud Volumes ONTAP はアイドル時に CPU を解放しません https://aws.
 
 ノードがリブートしたら、ストレージを戻す前に、パートナーがデータを同期する必要があります。データの再同期にかかる時間は、ノードが停止している間にクライアントが書き込んだデータの量、およびギブバックの実行中のデータの書き込み速度によって異なります。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha.html["Cloud Volumes ONTAP HA でのストレージの仕組みをご確認ください AWS で実行されているペア"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html["Cloud Volumes ONTAP HA でのストレージの仕組みをご確認ください AWS で実行されているペア"^]。
 
 
 
 == AWS C2S 環境の制限事項
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html#limitations["AWS C2S で Cloud Volumes ONTAP の制限事項を表示します"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html#limitations["AWS C2S で Cloud Volumes ONTAP の制限事項を表示します"^]。
